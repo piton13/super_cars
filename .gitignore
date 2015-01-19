@@ -3,7 +3,7 @@
 !js/*.js
 *.json
 *.jpg
-!image/**/*.jpg
+!images/**/*.jpg
 node_modules/
 github/
 dest/
