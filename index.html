@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if IE8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>SuperCars</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/jquery.dataTables.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/navigation.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/main-content.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<!-- <link rel="stylesheet" href="dest/style.min.css"> -->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+		
+		<!-- Navigation Fixed Top -->
+
+	  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      	<div class="row">
+      		<div class="col-sm-9 col-sm-offset-2 col-md-9 col-md-offset-2 col-lg-9 col-lg-offset-2">
+      			<div class="navbar-header">
+      			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      			    <span class="sr-only">Toggle navigation</span>
+      			    <span class="icon-bar"></span>
+      			    <span class="icon-bar"></span>
+      			    <span class="icon-bar"></span>
+      			  </button>
+      			  <a class="navbar-brand" href="table.html">List of Super Cars</a>
+              <a id="BackToTop" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+      			</div>
+      			
+      			<div id="navbar" class="navbar-collapse collapse">
+      			  <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+      			    <li><a href="#about">About</a></li>
+      			    <li><a id="contact" href="#contacts">Contacts</a></li>
+      			    <li class="dropdown">
+      			      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My skills <span class="caret"></span></a>
+      			      <ul class="dropdown-menu" role="menu">
+      			      	<li class="dropdown-header">HTML</li>
+      			        <li><a href="#">HTML 4,5</a></li>
+      			        <li><a href="#">XHTML</a></li>
+      			        <li><a href="#">Valid</a></li>
+      			        <li><a href="#">Responsive design</a></li>
+      			        <li><a href="#">Cross browser</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">CSS</li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">SASS</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">JS</li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">DataTables for jQuery</a></li>
+      			        <li class="divider"></li>
+      			        <li class="dropdown-header">Frameworks</li>
+      			        <li><a href="#">Bootstrap</a></li>
+                    <li><a href="#">Grunt</a></li>
+      			        <li><a href="#">Git</a></li>
+      			      </ul>
+      			    </li>
+      			  </ul>
+      			  
+      			  <form class="navbar-form navbar-right hidden-sm hidden-xs">
+      			    <input type="text" class="form-control" placeholder="Search...">
+      			  </form>
+      			</div><!--/.nav-collapse -->
+      		</div>
+      	</div>
+      </div>
+	  </nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        
+        <!-- Navigation SideBar  -->
+
+        <div class="col-sm-2 col-md-2 col-lg-2 sidebar">
+          <ul class="panel-group list-unstyled hidden-xs" id="accordeon">
+            
+          </ul>
+        </div>
+
+        <!-- Main-Content -->
+
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main-body">
+
+          <div class="main-content">
+
+            <!-- !!!!!!!!!!!!! Slider !!!!!!!!!! -->
+
+              <div id="carousel" class="carousel slide">
+              
+              
+                <!-- Indicators of slides -->
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                  <li data-target="#carousel" data-slide-to="3"></li>
+                  <li data-target="#carousel" data-slide-to="4"></li>
+                  <li data-target="#carousel" data-slide-to="5"></li>
+                  <li data-target="#carousel" data-slide-to="6"></li>
+                </ol>
+              
+                <!-- Slider -->
+              
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images/slider/01-mc-laren-f1.jpg" height="1080" width="1920" alt="There is McLaren F1 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>McLaren F1</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit Germany - > Mercedes</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/02-Bugatti-Veyron.jpg" height="1080" width="1920" alt="There is Bugatti Veyron 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Bugatti Veyron</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit France - > Bugatti</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/03-Ford-GT.jpg" height="1080" width="1920" alt="There is Ford GT 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Ford GT</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit USA - > Ford</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/04-2013-red-ferrari-laferrari.jpg" height="1080" width="1920" alt="There is LaFerrari 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>LaFerrari</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit Italia - > Ferrari</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/05-Maserati-MC12.jpg" height="1080" width="1920" alt="There is Maserati MC12 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Maserati MC12</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit Italia - > Maserati</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/06-Porsche-918-Spyder.jpg" height="1080" width="1920" alt="There is Porsche 918 Spyder 1920*1080" />
+                    <div class="carousel-caption">
+                      <h3>Porsche 918 Spyder</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit Germany - > Porsche</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/07-pagani-zonda-r.jpg" height="1080" width="1920" alt="There is Pagani Zonda 1920*1080" />
+                    <div class="carousel-caption">
+                      <h3>Pagani Zonda</h3>
+                      <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+                      <p>for more info visit Italia - > Pagani</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Arrows toggle slides -->
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 footer-background">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <h6>&copy; By Igor Mykhaylyuk</h6>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                <h6>Mobile1: 093-74-83-972</h6>
+                <h6>Mobile2: 096-987-0-687</h6>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                <h6>email: igor13luk@gmail.com</h6>
+                <h6>skype: piton131313</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Templates -->
+  <script type="text/template" id="StartPage">
+    <div id="carousel" class="carousel slide">
+                <!-- Indicators of slides -->
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                  <li data-target="#carousel" data-slide-to="3"></li>
+                  <li data-target="#carousel" data-slide-to="4"></li>
+                  <li data-target="#carousel" data-slide-to="5"></li>
+                  <li data-target="#carousel" data-slide-to="6"></li>
+                </ol>
+              
+                <!-- Slider -->
+              
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images/slider/01-mc-laren-f1.jpg" height="1080" width="1920" alt="There is McLaren F1 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>McLaren F1</h3>
+                      <p>for more info visit Germany - > Mercedes</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/02-Bugatti-Veyron.jpg" height="1080" width="1920" alt="There is Bugatti Veyron 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Bugatti Veyron</h3>
+                      <p>for more info visit France - > Bugatti</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/03-Ford-GT.jpg" height="1080" width="1920" alt="There is Ford GT 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Ford GT</h3>
+                      <p>for more info visit USA - > Ford</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/04-2013-red-ferrari-laferrari.jpg" height="1080" width="1920" alt="There is LaFerrari 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>LaFerrari</h3>
+                      <p>for more info visit Italia - > Ferrari</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/05-Maserati-MC12.jpg" height="1080" width="1920" alt="There is Maserati MC12 1920*1080">
+                    <div class="carousel-caption">
+                      <h3>Maserati MC12</h3>
+                      <p>for more info visit Italia - > Maserati</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/06-Porsche-918-Spyder.jpg" height="1080" width="1920" alt="There is Porsche 918 Spyder 1920*1080" />
+                    <div class="carousel-caption">
+                      <h3>Porsche 918 Spyder</h3>
+                      <p>for more info visit Germany - > Porsche</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/slider/07-pagani-zonda-r.jpg" height="1080" width="1920" alt="There is Pagani Zonda 1920*1080" />
+                    <div class="carousel-caption">
+                      <h3>Pagani Zonda</h3>
+                      <p>for more info visit Italia - > Pagani</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Arrows toggle slides -->
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+    </div>
+  </script>
+  <script type="text/template" id="SuperCarsHistory"> 
+      <div class="jumbotron">
+        <div class="container starter-template">
+          <h2>Supercar History - The Birth of the Supercar</h2>
+          <p class="lead">Sports cars started to appear in the late 40's with the introduction of 'sporting' road cars from now famous marques such as Ferrari, Jaguar, Lotus and Porsche. In those days, the ethos of the sports car was a car designed not only for the road but for motorsport  competition aswell.</p>
+          <p class="lead">Through the 50's and early 60's sports car performance progressed. 1954 saw the arrival of one of the all time classics the Mercedes 300SL 'Gull Wing'. It's fuel injected  3 litre produced over 240bhp giving a claimed top speed of 165mph. Also, as far back as 1957, the Chevrolet Corvette was capable of hitting 60mph in under 6 seconds, while the Z102 from little known manufacturer Pegaso was rumoured to be good for 160mph!</p>
+          <p class="lead">As the 60's dawned Aston Martin and Ferrari both offered 150mph plus vehicles in the shape of the DB4GT Zagato and 400 Superamerica models respectively, but it was Jaguar that stunned the world with the introduction in 1961 of the legendary E-type. Ferrari then created a limited number of what is now the world's most valuable classic,Ferrari 250GTOthe timeless 160mph 250 GTO. Lamborghini entered the fray in 1964 with the 350GT, joined by Iso with the Grifo and TVR with the original Griffith. But it was to be Ford who would change the face of sports cars with what many people believe to be the first supercar, the GT40.</p>
+          <p class="lead">Ford GT40Ford wanted racing success and to that end tried to buy Ferrari in the early 60's. Ferrari said no! Ford didn't take kindly to this and so vowed to out-do Ferrari with their own racing car, so in 1965 the GT40 was born. To meet regulations Ford had to make a number of 'road legal' versions of the GT40, hence its inclusion here as the first supercar for the road. In the late 60's Ford went on to make seven Mark III GT40's - 'softened' for road use (with a mere 310bhp!).</p>
+          <p class="lead">AC Cobra 4271965 saw another candidate for the title world's first supercar, the brutal AC Cobra 427. American racer Caroll Shelby decided to shoe-horn a 427 cu in (hence the name) Ford V8 into a lightweight British sports car, the AC Ace. The result was a car of astounding performance -  160mph, 0-60mph in 4.2 sec and 0-100mph in 10 (record acceleration figures that would stand for over 20 years).</p>
+          <p class="lead">1966 was an eventful year with the introduction of the 165mph Ferrari 275GTB, the 7 litre Corvette Sting Ray and the first 4-wheel drive road car, the Jensen FF. However, overshadowing all these was, in my opinion, the first  true supercar for the road, the  Lamborghini Miura gorgeous Lamborghini Miura. The Miura was the first production car to feature  a mid-mounted engine and so its appearance was radically different to any road car that had come before. Performance from the V12 was equally radical, over 170mph was possible for those brave enough to try it!</p>
+          <p class="lead">Just a few months after the launch of the Miura, Maserati introduced the Ghibli. More  Gran Turismo that supercar, the Ghibli offered 160mph performance but coupled with a luxurious environment (it even had air con, rare at the time). This same year saw another Giugiaro styled Italian supercar, the De Tomaso Mangusta along with the Swiss made Monteverdi 375.</p>
+          <p class="lead">Ferrari Daytona1968 saw the birth of a legend. Lamborghini had moved the goalposts with the Miura so Ferrari hit back with their first entry into the supercar league, the 365 GTB 'Daytona'. Although it still used the 'old-style' front engine layout, with 175mph and 60mph in 5.5 sec the Daytona was a performance match for its Modena rival.</p>
+          <p class="lead">Four years after the Mangusta, De Tomaso launched what was to be their biggest selling car by far, the Pantera. A purposeful Italian body housed the ubiquitous Ford V8. The Pantera typified the 'wedge' style that was to become the trademark look of the supercar throughout the 70's, bought to the fore by leading  Porsche 911 2.7RSstylists such as Bertone's Gandini and Ital Design's Giugiaro and echoed in the Maserati Bora of 1971. Porsche proved to be the exception to this rule with their much sought after lightweight 911 2.7 RS of 1972.</p>
+          <p class="lead">In the early 70's the supercar was sent reeling by the oil crisis. With petrol prices quadrupling, gas guzzling performance cars were suddenly not an attractive proposition - even more so when in a knee-jerk reaction the US established a ridiculous 55mph speed limit! Thankfully there were still enough people out there who couldn't do without the thrill of a powerful engine, so the performance car was safe.</p>
+          <p class="lead">Ferrai 365BBIronically, in the face of the fuel crisis, 1974 saw the introduction of two of the most powerful and significant supercars to date, the beautiful Ferrari 365 BB and the 'King of Supercars' the astounding Lamborghini Countach LP400. Following the new supercar trend, Ferrari decided that the BB should be mid-engined (a first for the Ferrari flagship). Performance was on a par with the outgoing Daytona, 175mph and 60mph in 5.5sec,Lamborghini Countach LP400 but handling was vastly improved. The BB's perennial rival the Countach could be accurately described as the most stunning shape to ever hit the road. Bertone's lines encompassed a mighty V12 giving 170mph plus performance. The Countach would go on, in all its incarnations, to be the definitive supercar for another 15 years.</p>
+          <p class="lead">1975 was another important year in the supercar world with the introduction of the original Porsche 911 Turbo. Although BMW gave us the first Turbo road car two years earlier with the 2002, it was Porsche who would become known for pioneering the technology.  Porsche 911 TurboThe 12 year old design of the 911 was augmented in the turbo by the use of aerodynamic spoilers, the first road car to feature these now common styling features.</p>
+          <p class="lead">The 1977 Panther 6 was undoubtedly one of the most bizarre entrants in the supercar hall of fame. Panther 6 Whether it can be classed as a production car is debatable as only two were made, nevertheless this 8.2 litre twin-turbo charged 6-wheeler may well have been the first road car to be capable of 200mph (although this was never proven).</p>
+          <p class="lead">As the 70's drew to a close we were greeted by two new supercars from established names, both offering a different approach to high performance. The Aston Martin V8 Vantage used the time proven big engine, big power route. At 170mph it had a good claim for the title of world's fastest production car. Meanwhile BMW's M1 went the technology route. Designed to be the most efficient supercar of it's day, it remains BMW's only mid-engined road car. As a footnote, 1979 may have seen the world's first 200mph road car in the form of the Koenig Ferrari Boxer. Not a production car in the  strictest sense but a significant milestone nevertheless.</p>
+          <p class="lead">Lotus Turbo EspritThe 1980's began with Lotus' entry into the premier league with the Turbo Esprit. Although top speed was respectable at around 150mph, it was acceleration and handling that defined it as a supercar. The early 80's also saw one of the most astonishing cars ever to come out of Britain, the outrageous 192mph Aston Martin Bulldog. Although only one was ever made, for it's looks and performance alone it deserves it's place in supercar history. The mid 80's also saw new competitors for the  Ferrari Testarossaongoing battle for supremacy between Ferrari and Lamborghini with the introduction of the 180mph Testarossa and the 455bhp upgrade of the Lamborghini Countach QV.</p>
+          <p class="lead">The 80's, however, would be remembered for two things - the financial boom that sent elite car values soaring and, probably as a consequence of this, the birth of the hypercar! It all started with the emergence of the Group B racing class. To be eligible to compete, manufacturers had to produce at least 200 road going version of their competition cars. While short lived it may have been, Group B provided us with a selection of awesome road cars that moved performance onto a new plane, the first of which was the sublime Ferrari 288 GTO.</p>
+          <h2>Supercar History - The Hypercar</h2>
+          <p>The GTO's twin-turbo V8 endowed it with genuine 190mph performance and a 0-60 time of under 5 seconds (the first road car to achieve this since the 1965 AC Cobra). Racing materials and technology played a large part in the make up of the GTO, as they did in the next in the hypercar line the fascinating Porsche 959.  Porsche 959 The 959 was a technological 'tour de force'. Its 6 speed gearbox and 4-wheel drive powered the Porsche to 197mph with acceleration to 60mph in 3.9sec - the first car under 4sec, breaking the Cobra's 20 year old record.
+            
+            Ferrari took up the challenge of the 959 and on their 40th birthday, in 1987, gave us the first road car genuinely capable of 200mph, the F40. A true racer for the road, the F40 is most experts choice as the greatest drivers car ever made. Top speed was 201mph with 60mph from rest in 3.9sec and even more impressive 100mph from rest in 7.8sec (beating the 959 by a second).
+            
+             Ferrari F40
+            
+            The 80's signed off with four new members of the 150mph club, the 928S4 and 944 Turbo from Porsche, the 190mph Zagato from Aston Martin, while Ford came out with a junior-supercar for the masses with the Sierra RS Cosworth, offering incredible value for money at around £20k (if you could afford the insurance!). Topping them all  RUF CTR 'Yellowbird'however, was the awesome Ruf CTR 'Yellowbird', the world's fastest car at a verified 213mph! 1989 saw the first Japanese supercars in the shape of the Nissan 300ZX, closely followed by the first incarnation of cult favourite the Skyline GTR.
+            
+             Lamborghini Countach Anniversary1990 was a significant year, for it signaled the end of the reign of the definitive supercar, the Lamborghini Countach. All was not lost though as its successor, the 202mph Diablo, would become one of the most awe inspiring experiences that you can have on  Lamborghini Diablo VT four wheels! In a busy year we also saw the re-emergence of TVR as a supercar force with the gorgeous Griffith roadster, Honda also entered the fray with the superb handling and totally reliable NSX - a car your great granny could drive and Chevrolet introduced the 180mph Corvette ZR1.
+            
+            The biggest controversy of the year however, was the launch of the Lotus Carlton. We were greeted with Newspaper headlines predicting armageddon at the hands of this 175mph five seater. It didn't happen!
+            
+             Jaguar XJ220The boom period of the 80's was now well and truly over, sky high supercar prices were now settling down to a saner level - which was bad news for speculators and the Jaguar XJ220. Court cases ensued as people realized their £400,000 'investment' had turned into fools gold. It is a shame that this is what such an exceptional car will be remembered for.
+            
+            On a lighter note, the same year saw the  Bugatti EB110 re-birth of a famous name from the past with the 1991 introduction of the quad-turbo Bugatti EB110, at the time the fastest car in the world at 218mph.
+            
+            America finally gave us a rival to the Corvette with the beastly 8 litre Dodge Viper offering 165mph and 0-60mph in under 5sec. However, the performance goalposts were about to be moved once again, this time so far that no-one else has yet reached them, because in 1993 came the fastest supercar of all time, the McLaren F1.
+            
+             McLaren F1
+            
+            The McLaren's performance figures read like those of a Le Mans car. 240mph, 0-60mph in 3.2sec and 0-100mph in just 6.3sec (this would be a fast time to 60mph in a 'normal' sports car). Just 100 were made and at £634,000 you can probably see why. But the F1's place in history is secure. In the current climate of speed phobia and ever tighter environmental restrictions we may never see its like again.
+            
+             Ferrari F355If 1993 bought us the fastest ever car then 1994 may have bought us the best, the Ferrari F355. The 355 was the complete car. Very fast, superb handling and gorgeous Pininfarina bodywork - all in a package that could be used every day. This year also saw the launch of two four-seater supercars, both capable of breezing their occupants along at over 170mph in leather lined luxury - the  Ferrari 456, and the motorsport developed BMW M5.
+            
+             Ferrari F50The Ferrari F50 of 1995 was billed as a Grand Prix car for the road. Offering 200mph+ performance, the F50 featured what was in essence an early 90's Formula One engine from Alain Prost's company car! In a busy period for Ferrari, we were also greeted by their first front engined flagship since the Daytona, the 550 Maranello. Another first came from Lotus with the Esprit finally gaining the V8 it had deserved for so longTVR Cerbera (even if it did still sound like a 4 !). TVR followed up the Griffith's success with the superfast Cerbera (0-100mph in 9 seconds for just £40,000) and Porsche gave us the last of the air cooled 911s, the brilliant 993 Turbo plus the wild Le Mans inspired GT2.
+            
+            1996 saw Lotus going back to their roots with the classic Elise. Endowed with a  modestly powered engine, the Elise still managed lively acceleration and superb handling thanks to it's overall light weight. Porsche, meanwhile, Lotus Elise seemed to have lost  the plot! While no-one can argue that their re-working of the 911, the 996, was an excellent car it seemed to have turned from a seat of your pants supercar into a softened up GT overnight.
+            
+            As the millennium came to a close a new breed of rally bred supercar started to emerge from Japan. The Subaru Impreza Turbo led the way, going from cult hero to mainstream bargain supercar in a few short years, followed by it's close rival the technology laden Mitsubishi Lancer Evo and second generation Nissan Skyline GTR.
+            
+            The year 2000 bought us two very different styles of supercar. The first was the minimalist approach, epitomized by the superlight Caterham R500. A modest 230bhp, but in a body weighing little more than 1000lbs meant blistering acceleration.  The R500 was joined by a new family ofRadical Supersport lightweight cars all powered by powerful motorbike engines offering stunning acceleration through sequential bike gearboxes, the definitive example being the awesome Radical Supersport.
+            
+             Pagani Zonda C12The second approach was the old fashioned mega-power in a gorgeous low, wide body. The new Pagani Zonda C12 S is a perfect example. Modern, detailed styling and a powerful 540bhp V12 pushing the newcomer to a 215mph top speed. But perhaps the ultimate came in the form of the new Porsche 996 Turbo. It may not have had the looks or driver involvement of it's predecessors but it may well have been the fastest point to point supercar ever created, and that it could be used as your everyday transport was nothing short of amazing.
+            
+             Ferrari EnzoAs we look back on 40 years of supercar advancement, the future looks surprisingly bright. With new, more powerful models on the way from marques such as Ferrari with the Enzo, Porsche's Carrera GT and  Bugatti VeyronBugatti's 1000bhp Veyron, along with McLaren  worrying efforts from the likes of Koenigsegg and B Engineering's Edonis, we can all be optimistic that the supercar will still be with us in another 40 years to come!</p>
+        </div>
+      </div>
+  </script>
+  <script type="text/template" id="MyContacts">
+    <div class="row">
+      <div class="col-xs-2 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+        <h4>Mobile1:</h4>
+        <h4>Mobile2:</h4>
+        <h4>email:</h4>
+        <h4>skype:</h4>
+      </div>
+      <div class="col-xs-2 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+        <h4>0937483972</h4>
+        <h4>0969870687</h4>
+        <h4>igor13luk@gmail.com</h4>
+        <h4>piton131313</h4>
+      </div>
+    </div>
+  </script>
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+  <script src="js/underscore-1.7.0.js"></script>
+  <script src="js/!!!my_js_pereglyanuty.js"></script>
+  <!-- <script src="dest/build.min.js"></script> -->
+</body>
+</html>

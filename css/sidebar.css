@@ -1,0 +1,120 @@
+.sidebar {
+	/* z-index: 1000; */
+	display: block;
+	border-radius: 4px;
+	/* overflow-x: hidden; */
+	/* overflow-y: auto; */ /* Scrollable contents if viewport is shorter than content. */
+	/* background-color: transparent; */
+	background: linear-gradient(to right, rgba(1,1,1,.7), rgba(4,4,4,.5));
+	box-shadow: 1px 0 9px 2px rgba(4,4,4,.8),
+	 inset 0 0 3px 1px rgba(255,255,255,.2);
+}
+.sidebar a[data-toggle] {
+	text-decoration: none;
+	color: aqua;
+	background: black;
+	box-shadow: inset 0 0 3px 1px #fff;
+	display: block;
+	padding: 5px;
+	border-radius: 4px;
+}
+.sidebar a[data-toggle]:hover {
+	color: white;
+	background: linear-gradient(to top, #222, #555);
+	box-shadow: none;
+}
+.sidebar a[data-toggle]:active,
+.sidebar a[data-toggle]:focus {
+	color: yellow;
+	background: linear-gradient(to top, #222, #555);
+	box-shadow: none;
+}
+.sidebar > ul {
+	padding: 0;
+	margin: 0;
+}
+.sidebar>ul:first-child {
+	padding-top: 15px;
+}
+.sidebar>ul:last-child {
+	padding-bottom: 15px;
+}
+.sidebar ul ul {
+	padding: 0;
+	margin: 0;
+	margin-left: 15px;
+}
+.sidebar ul ul>li {
+	padding: 0 5px;
+	margin: 4px;
+	/*box-shadow: inset 0 0 5px red;*/
+	border: 1px solid red;
+	border-radius: 4px;
+}
+.sidebar ul ul>li:hover {
+	border: none;
+	/*color: white;*/
+	background: linear-gradient(to top, #222, #555);
+}
+.sidebar ul ul>li:hover a {
+	/*border: none;*/
+	color: white;
+	background: transparent;
+}
+.sidebar ul ul>li>a {
+	text-decoration: none;
+	color: aqua;
+}
+.sidebar ul ul>li>a:active,
+.sidebar ul ul>li>a:focus {
+	color: yellow;
+}
+
+/* .nav-sidebar {
+  margin-right: -9px; 20px padding + 1px border
+  margin-bottom: 10px;
+  margin-left: -9px;
+} */
+
+/*.main {
+    padding-right: 20px;
+    padding-left: 20px;
+}*/
+
+.panel-group {
+  /*margin: 5px 0;*/
+}
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.panel-group .panel + .panel {
+  margin-top: 5px;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: transparent; /* previous = #fff; */
+  /* border: 1px solid transparent; */
+  border-radius: 4px;
+  /* -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+}
+/* @media (max-width: 767px) {
+	.sidebar ul:first-child {
+		padding-top: 10px;
+	}
+	.sidebar ul:last-child {
+		padding-bottom: 10px;
+	}
+} */
+
+@media (min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		overflow-x: hidden; 
+		overflow-y: auto;
+		top: 55px;
+		bottom: 5px;
+		left: 0;
+	}
+}
