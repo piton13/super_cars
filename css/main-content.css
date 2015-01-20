@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 	text-align: center;
 }
-h3 {
+.carousel-caption h3 {
 	color: aqua;
 	text-shadow: 1px 1px 0 yellow;
 	letter-spacing: 2px;
@@ -77,7 +77,7 @@ h3 {
 
 @media (max-width: 767px) {
   .main-body {
-  	margin-bottom: 100px;
+  	padding-bottom: 110px;
   }
   .glyphicon-chevron-up {
   	left: 85%;

@@ -1,3 +1,18 @@
+// Data base of country Brands of supercars;
+
+var dataCountry = [
+{name: 'USA', models: ['Ford','Dodge Viper','SSC Aero','Cizeta','Mosler','Saleen','Chevrolet Corvette','Chevrolet Camaro','Vector','Plymouth','Barracuda','Pontiac GTO','Mustang']},
+{name: 'Italia', models: ['Ferrari','Maserati','Lamborghini','Pagani','Alfa Romeo','De Tomaso']},
+{name: 'Germany', models: ['Mercedes','BMW','Audi','Porsche','Gumpert','Isdera']},
+{name: 'France', models: ['Bugatti']},
+{name: 'United Kingdom', models: ['Jaguar','Cobra','TVR','Lotus','Bentley','Aston Martin','Ascari','Lister','Stealth','Panther','Ultima']},
+{name: 'Japan', models: ['Acura','Lexus','Nissan']},
+{name: 'Netherlands', models: ['Spyker']},
+{name: 'Sweden', models: ['Koenigsegg']},
+{name: 'Spain', models: ['GTA']},
+{name: 'Australia', models: ['Holden Monaro']}
+];
+
 // Data base of supercars;
 
 var data = [
@@ -152,15 +167,33 @@ var data = [
 {brand: 'SSC', model: 'Aero', birthday: '1990s-2000s', info: '', engine: '', horsepower: ''},
 {brand: '', model: '', birthday: '', info: '', engine: '', horsepower: ''}
 ];
+
 $(document).ready(function(){
+
+	// Script for creating SideBar Navigation;
+	// 
+	// Sort by Country;
+	// _.sortBy(dataCountry, function (country) { return country.name;});
+	// 
+	// Sort by Models;
+	// _.sortBy(dataCountry[i].models);
+	// 
+	dataCountry = _.sortBy(dataCountry, function (country) { return country.name;});
+	for(var i=0; i<dataCountry.length; i++) {
+		dataCountry[i].models.sort();
+		// dataCountry[i].models = _.sortBy(dataCountry[i].models);
+		document.getElementById('accordeon').innerHTML += '<li class="panel panel-default"><a href="#collapse-'+i+'" data-toggle="collapse" data-parent="#accordeon">'+dataCountry[i].name+'<span class="sr-only">'+dataCountry[i].name+' country</span></a><ul id="collapse-'+i+'" class="panel-collapse collapse list-unstyled"></ul></li>';
+		
+		for(var j=0; j<dataCountry[i].models.length; j++) {
+			document.getElementById('collapse-'+i).innerHTML += '<li><a href="#">'+dataCountry[i].models[j]+'</a></li>';
+		}
+	}
 
 	// Script for dataTable;
 
-	for(var i=0; i<data.length; i++){
-		document.getElementById('table').innerHTML += "<tr id='"+i+"'><td>"+data[i].brand+"</td><td>"+data[i].model+"</td><td class='hidden-xs'>"+data[i].birthday+"</td></tr>";
+	for(var l=0; l<data.length; l++){
+		document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].birthday+"</td></tr>";
 	}
-
-
 	$('tr').on('click', function(e){
 		var id = this.id;
 		alert("Brand: "+data[id].brand+",\nModel: "+data[id].model+",\nBirthday: "+data[id].birthday+",\nInfo: "+data[id].info);
@@ -168,7 +201,32 @@ $(document).ready(function(){
 	});
 	
 	// Usage DataTable
-	$('table').dataTable();
-	$('#example').dataTable();
+	// $('table').dataTable();
+	// $('#example').dataTable();
+
+	// Script for change content
+	// 
+	$("[href=#about]").on('click', function(e){
+		$('.main-content').html($('#SuperCarsHistory').html());
+	});
+	$("[href=#home]").on('click', function(e){
+		$('.main-content').html($('#StartPage').html());
+	});
+	$("[href=#contacts]").on('click', function(e){
+		$('.main-content').html($('#MyContacts').html());
+	});
+	$("[href=#table]").on('click', function(e){
+		$('.main-content').html($('#TableLists').html());
+	});
+
+	// Script for Back_to_top click
+	//for Chrome; 
+	$("#BackToTop").on('click', function(e){
+		$('body').scrollTop(0);
+	});
+	// for Firefox;
+	$("#BackToTop").on('click', function(e){
+		$('html').scrollTop(0);
+	});
 
 });
