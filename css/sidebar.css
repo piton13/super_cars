@@ -52,7 +52,7 @@
 	border-radius: 4px;
 }
 .sidebar ul ul>li:hover {
-	border: none;
+	border: 1px solid transparent;
 	/*color: white;*/
 	background: linear-gradient(to top, #222, #555);
 }
