@@ -11,24 +11,24 @@ select {
   font: inherit;
   color: inherit;
 } */
-label {
-  /* display: inline-block;
+/* label {
+  display: inline-block;
   max-width: 100%;
-  margin-bottom: 5px; */
-  /* font-size: 1.2em; */
-  /* font-weight: normal; */
-}
-input[type="search"] {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: normal;
+} */
+/* input[type="search"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-input[type="radio"],
+} */
+/* input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
-}
+} */
 /* input[type="file"] {
   display: block;
 }
@@ -50,12 +50,12 @@ input[type="checkbox"]:focus {
 
 /* !!! Style for thead and tfoot of DataTable !!! */
 
-table.dataTable thead th,
+/* table.dataTable thead th,
 table.dataTable tfoot th {
-  /* color: aqua; */
-  /* font-weight: normal; */
-  /* font-size: 1.25em; */
-}
+  color: aqua;
+  font-weight: normal;
+  font-size: 1.25em;
+} */
 /* .container,
 .container-fluid {
   margin-top: 2em;
@@ -79,7 +79,9 @@ table.dataTable tfoot th {
   color: aqua !important;
   border: 1px solid transparent;
   background: linear-gradient(to bottom, black, rgba(4,4,4,.8));
-  border-radius: 4px;
+  -webkit-border-radius: 4px; /* for Chrome 4.0+; Safari 3.1+; */
+  -moz-border-radius: 4px; /* for Firefox 3.0+; */
+  border-radius: 4px; /* for Chrome 5.0+; IE 9.0+; Firefox 4.0+; Safari 5.0+; Opera 10.5+; */
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: white !important;
@@ -137,17 +139,22 @@ table.dataTable tfoot th {
   /* Opera 11.10+ */
   background: linear-gradient(to bottom, #2b2b2b 0%, #0c0c0c 100%);
   /* W3C */
-  box-shadow: inset 0 0 3px #111;
+  -webkit-box-shadow: inset 0 0 3px #111; /* for Chrome 4.0+; Safari 3.1+; */
+     -moz-box-shadow: inset 0 0 3px #111; /* for Firefox 3.5+; */
+          box-shadow: inset 0 0 3px #111; /* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
 }
 
 
 .dataTables_wrapper .dataTables_filter input {
   margin-left: 0.5em;
-  border-radius: 4px;
+  -webkit-border-radius: 4px; /* for Chrome 4.0+; Safari 3.1+; */
+  -moz-border-radius: 4px; /* for Firefox 3.0+; */
+  border-radius: 4px; /* for Chrome 5.0+; IE 9.0+; Firefox 4.0+; Safari 5.0+; Opera 10.5+; */
   line-height: 1.3em;
   padding: 1px 5px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Chrome 4.0+; Safari 3.1+; */
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Firefox 3.5+; */
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -157,8 +164,9 @@ table.dataTable tfoot th {
 .dataTables_wrapper .dataTables_filter input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Chrome 4.0+; Safari 3.1+; */
+     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Firefox 3.5+; */
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
 }
 .dataTables_wrapper .dataTables_filter input::-moz-placeholder {
   color: #999;
@@ -172,10 +180,13 @@ table.dataTable tfoot th {
 }
 
 select {
-  border-radius: 4px;
+  -webkit-border-radius: 4px; /* for Chrome 4.0+; Safari 3.1+; */
+  -moz-border-radius: 4px; /* for Firefox 3.0+; */
+  border-radius: 4px; /* for Chrome 5.0+; IE 9.0+; Firefox 4.0+; Safari 5.0+; Opera 10.5+; */
   padding: 1px 5px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Chrome 4.0+; Safari 3.1+; */
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Firefox 3.5+; */
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); /* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -183,8 +194,9 @@ select {
 select:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Chrome 4.0+; Safari 3.1+; */
+     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Firefox 3.5+; */
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6); /* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
 
 }
 .main-table {
