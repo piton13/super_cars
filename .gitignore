@@ -1,12 +1,8 @@
 *.txt
 *.js
-!js/*.js
-dest/
-Gemfile
-github/
+*.json
 *.jpg
-image of super cars/
-images/compressed_slider/
-!images/**/*.jpg
 node_modules/
-package(forGrunt).json
+github/
+dest/
+image of super cars/
