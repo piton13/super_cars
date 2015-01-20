@@ -1,8 +1,13 @@
 *.txt
+
+dest/
+github/
 *.js
+!js/*.js
 *.json
 *.jpg
-node_modules/
-github/
-dest/
+!images/**/*.jpg
 image of super cars/
+images/compressed_slider/
+node_modules/
+package(forGrunt).json
