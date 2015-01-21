@@ -1,9 +1,7 @@
 *.txt
-
 dest/
 github/
-*.js
-!js/*.js
+Gruntfile.js
 *.json
 *.jpg
 !images/**/*.jpg
