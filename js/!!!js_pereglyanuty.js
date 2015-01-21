@@ -191,9 +191,7 @@ $(document).ready(function(){
 
 	// Script for dataTable;
 
-	for(var l=0; l<data.length; l++){
-		document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].birthday+"</td></tr>";
-	}
+	
 	$('tr').on('click', function(e){
 		var id = this.id;
 		alert("Brand: "+data[id].brand+",\nModel: "+data[id].model+",\nBirthday: "+data[id].birthday+",\nInfo: "+data[id].info);
@@ -217,6 +215,9 @@ $(document).ready(function(){
 	});
 	$("[href=#table]").on('click', function(e){
 		$('.main-content').html($('#TableLists').html());
+		for(var l=0; l<data.length; l++){
+		document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].birthday+"</td></tr>";
+	}
 	});
 
 	// Script for Back_to_top click
