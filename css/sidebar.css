@@ -31,21 +31,22 @@
 }
 .sidebar a[data-toggle]:hover {
 	color: white;
-	background-color: #222222;
-  /* "Invalid", but works in 6-8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
-  /* Valid, works in 8-9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Firefox 3.6 - 15 */
-  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 11.1 - 12 */
-  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background: linear-gradient(to top, #222222, #555555, #777777);
+	background: linear-gradient(to top, #222222, #555555, #777777);
+	/* background-color: #222222;
+	  "Invalid", but works in 6-8
+	  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
+	  Valid, works in 8-9
+	  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
+	  Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0
+	  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
+	  Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3
+	  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
+	  Firefox 3.6 - 15
+	  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 11.1 - 12
+	  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+
+	  background: linear-gradient(to top, #222222, #555555, #777777); */
 	/* for Chrome 4.0+; Safari 3.1+; */
 	-webkit-box-shadow: none;
 	/* for Firefox 3.5+; */
@@ -56,21 +57,22 @@
 .sidebar a[data-toggle]:active,
 .sidebar a[data-toggle]:focus {
 	color: yellow;
-	background-color: #222222;
-  /* "Invalid", but works in 6-8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
-  /* Valid, works in 8-9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Firefox 3.6 - 15 */
-  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 11.1 - 12 */
-  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background: linear-gradient(to top, #222222, #555555, #777777);
+	background: linear-gradient(to top, #222222, #555555, #777777);
+	/* background-color: #222222;
+	  "Invalid", but works in 6-8
+	  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
+	  Valid, works in 8-9
+	  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
+	  Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0
+	  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
+	  Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3
+	  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
+	  Firefox 3.6 - 15
+	  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 11.1 - 12
+	  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+
+	  background: linear-gradient(to top, #222222, #555555, #777777); */
 	/* for Chrome 4.0+; Safari 3.1+; */
 	-webkit-box-shadow: none;
 	/* for Firefox 3.5+; */
@@ -111,25 +113,26 @@
 	/* for Chrome 4.0+; Safari 3.1+; */
 	-webkit-box-shadow: none;
 	/* for Firefox 3.5+; */
-		 -moz-box-shadow: none;
+	-moz-box-shadow: none;
 	/* for Chrome 10.0+; IE 9.0+; Firefox 4.0+; Safari 5.1+; Opera 10.5+; */
-					box-shadow: none;
+	box-shadow: none;
 	/*color: white;*/
-	background-color: #222222;
-  /* "Invalid", but works in 6-8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
-  /* Valid, works in 8-9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Firefox 3.6 - 15 */
-  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 11.1 - 12 */
-  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background: linear-gradient(to top, #222222, #555555, #777777);
+	background: linear-gradient(to top, #222222, #555555, #777777);
+	/* background-color: #222222;
+	  "Invalid", but works in 6-8
+	  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);
+	  Valid, works in 8-9
+	  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#777777)";
+	  Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0
+	  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(0.5, #555555), to(#777777));
+	  Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3
+	  background: -webkit-linear-gradient(bottom, #222222, #555555, #777777);
+	  Firefox 3.6 - 15
+	  background: -moz-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 11.1 - 12
+	  background: -o-linear-gradient(bottom, #222222, #555555, #777777);
+	  Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+
+	  background: linear-gradient(to top, #222222, #555555, #777777); */
 }
 .sidebar ul ul>li:hover a {
 	/*border: none;*/

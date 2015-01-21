@@ -9,6 +9,7 @@
 }
 .footer-background {
   border-color: #777 #222 #222;
+  background: linear-gradient(to top, #222, #555, #777);
   /*background-color: #222222;*/
   /* "Invalid", but works in 6-8 */
   /*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#222222, endColorstr=#777777);*/
