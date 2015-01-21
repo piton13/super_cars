@@ -193,9 +193,7 @@ $(document).ready(function(){
 	});
 	$("[href=#listcars]").on('click', function(e){
 		$('.main-content').html($('#ListSuperCars').html());
-
 		// Script for dataTable;
-		// 
 		for(var l=0; l<data.length; l++){
 			document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].productionYear+"</td><td class='visible-md visible-lg'>"+data[l].horsepower+"</td><td class='visible-lg'>"+data[l].engine+"</td></tr>";
 		}
