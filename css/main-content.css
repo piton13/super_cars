@@ -20,18 +20,12 @@ body {
 	/* for Firefox 2.0+ */;
 	   -moz-box-sizing: border-box;
 	/* 	for Chrome 10.0+; IE 8.0+; Firefox 29.0+; Safari 5.1+; Opera 9.5+; */
-	        box-sizing: border-box; 
-  
+	        box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: Verdana, sans-serif;
 	font-style: italic;
 	text-align: center;
-}
-.carousel-caption h3 {
-	color: aqua;
-	text-shadow: 1px 1px 0 yellow;
-	letter-spacing: 2px;
 }
 
 /* !!! Styles for Main Content !!! */
@@ -42,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-content {
 	margin: 5px;
-	padding: 1px;
+	/*padding: 1px;*/
 	/* for Chrome 5.0+; IE 9.0+; Firefox 4.0+; Safari 5.0+; Opera 10.5+; */
 	border-radius: 4px;
 	/* for Chrome 4.0+; Safari 3.1+; */
@@ -54,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: url(http://subtlepatterns.com/patterns/scribble_light.png) repeat;
 }
 
-/* !!! Styles for GlyphIcons !!! */
+/* !!! Styles for GlyphIcons and BacktoTop !!! */
 
 .glyphicon {
 	color: aqua;
@@ -106,28 +100,11 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-/* !!! Styles for Carousel !!! */
-
-.carousel-caption p{
-	letter-spacing: 1px;
-	font-family: Verdana, sans-serif;
-	font-style: italic;
-	color: red;
-	text-shadow: 1px 1px 0 black;
-}
-.carousel, .slide, .carousel-inner, .item, .carousel-control {
-	/* for Chrome 5.0+; IE 9.0+; Firefox 4.0+; Safari 5.0+; Opera 10.5+; */
-	border-radius: 4px;
-}
-
 @media (max-width: 767px) {
   .main-body {
   	padding-bottom: 110px;
   }
   .glyphicon-chevron-up {
   	left: 85%;
-  }
-  .carousel-caption>p {
-		display: none;
   }
 }
