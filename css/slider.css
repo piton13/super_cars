@@ -20,13 +20,13 @@
 }
 /*!!!     Slider 1920*1080(shob pominyaty rozmir zobrazennya !!!
   !!!     treba pominyaty padding-bottom in .carousel-inner !!!*/
-.img1 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/01-mc-laren-f1.jpg);}
-.img2 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/02-Bugatti-Veyron.jpg);}
-.img3 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/03-Ford-GT.jpg);}
-.img4 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/04-2013-red-ferrari-laferrari.jpg);}
-.img5 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/05-Maserati-MC12.jpg);}
-.img6 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/06-Porsche-918-Spyder.jpg);}
-.img7 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/07-pagani-zonda-r.jpg);}
+.img1 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/01-mc-laren-f1_min.jpg);}
+.img2 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/02-Bugatti-Veyron_min.jpg);}
+.img3 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/03-Ford-GT_min.jpg);}
+.img4 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/04-2013-red-ferrari-laferrari_min.jpg);}
+.img5 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/05-Maserati-MC12_min.jpg);}
+.img6 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/06-Porsche-918-Spyder_min.jpg);}
+.img7 .frag {/* background-size: 100% 100%; */  background-image: url(../images/slider/07-pagani-zonda-r_min.jpg);}
 .frag {
   width: 12.5%;
   height: 100%;
@@ -38,36 +38,36 @@
 
   transform-origin: center right;
   transform: rotateY(90deg) translateZ(-100px) scale(1.5);
-  transition: transform .4s, opacity .4s, -webkit-filter 1s ease-out;
-  -webkit-filter: saturate(0) blur(10px) brightness(.6) contrast(3);
+  transition: transform .2s, opacity .2s, -webkit-filter .5s ease-out;
+  -webkit-filter: saturate(0) blur(5px) brightness(.6) contrast(2);
 }
 .img .frag2 {
   background-position: 14.3% 0;
-  transition-delay: .1s;
+  transition-delay: .05s;
 }
 .img .frag3 {
   background-position: 28.6% 0;
-  transition-delay: .2s;
+  transition-delay: .1s;
 }
 .img .frag4 {
   background-position: 43% 0;
-  transition-delay: .3s;
+  transition-delay: .15s;
 }
 .img .frag5 {
   background-position: 57.1% 0;
-  transition-delay: .4s;
+  transition-delay: .2s;
 }
 .img .frag6 {
   background-position: 71.4% 0;
-  transition-delay: .5s;
+  transition-delay: .25s;
 }
 .img .frag7 {
   background-position: 85.7% 0;
-  transition-delay: .6s;
+  transition-delay: .3s;
 }
 .img .frag8 {
   background-position: 100% 0;
-  transition-delay: .7s;
+  transition-delay: .35s;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -87,7 +87,7 @@
 } */
 .carousel-inner > .item {
   /*56.25 = widnowennya shyryny zobrazennya do vysoty;*/
-  padding-bottom: 56.25%;
+  padding-bottom: 66.66666%;
   height: 100%;
   width: 100%;
   background-color: #000;
@@ -329,6 +329,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .carousel-inner > .item {
+    padding-bottom: 56.25%;
+  }
+
+.img1 .frag { background-image: url(../images/slider/01-mc-laren-f1.jpg);}
+.img2 .frag { background-image: url(../images/slider/02-Bugatti-Veyron.jpg);}
+.img3 .frag { background-image: url(../images/slider/03-Ford-GT.jpg);}
+.img4 .frag { background-image: url(../images/slider/04-2013-red-ferrari-laferrari.jpg);}
+.img5 .frag { background-image: url(../images/slider/05-Maserati-MC12.jpg);}
+.img6 .frag { background-image: url(../images/slider/06-Porsche-918-Spyder.jpg);}
+.img7 .frag { background-image: url(../images/slider/07-pagani-zonda-r.jpg);}
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
