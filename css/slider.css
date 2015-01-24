@@ -15,7 +15,7 @@
   height: 100%;
 
   position: absolute;
-  perspective: 500px;
+  perspective: 400px;
   /*margin-left: -8px;*/
 }
 /*!!!     Slider 1920*1080(shob pominyaty rozmir zobrazennya !!!
@@ -37,37 +37,38 @@
   z-index: 0;
 
   transform-origin: center right;
-  transform: rotateY(90deg) translateZ(-100px) scale(1.5);
-  transition: transform .2s, opacity .2s, -webkit-filter .5s ease-out;
-  -webkit-filter: saturate(0) blur(5px) brightness(.6) contrast(2);
+  transform: rotateY(90deg) translateX(200px) scale(.8); 
+  /*rotateX(90deg); rotateY(270)*/
+  transition: transform .6s, opacity .005s; /* , -webkit-filter .8s ease-out */
+  /* -webkit-filter: saturate(0) blur(10px) brightness(.6) contrast(2); */
 }
 .img .frag2 {
   background-position: 14.3% 0;
-  transition-delay: .05s;
+  transition-delay: .2s;
 }
 .img .frag3 {
   background-position: 28.6% 0;
-  transition-delay: .1s;
+  transition-delay: .4s;
 }
 .img .frag4 {
   background-position: 43% 0;
-  transition-delay: .15s;
+  transition-delay: .6s;
 }
 .img .frag5 {
   background-position: 57.1% 0;
-  transition-delay: .2s;
+  transition-delay: .8s;
 }
 .img .frag6 {
   background-position: 71.4% 0;
-  transition-delay: .25s;
+  transition-delay: 1s;
 }
 .img .frag7 {
   background-position: 85.7% 0;
-  transition-delay: .3s;
+  transition-delay: 1.2s;
 }
 .img .frag8 {
   background-position: 100% 0;
-  transition-delay: .35s;
+  transition-delay: 1.4s;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -102,13 +103,13 @@
           transition: .6s ease-in-out left;
 }
 /*des tut ne pashyt*/
-.item~.active .img1 .frag,
-.item~.active .img2 .frag,
-.item~.active .img3 .frag,
-.item~.active .img4 .frag,
-.item~.active .img5 .frag,
-.item~.active .img6 .frag,
-.item~.active .img7 .frag {
+.item.active .img1 .frag,
+.item.active .img2 .frag,
+.item.active .img3 .frag,
+.item.active .img4 .frag,
+.item.active .img5 .frag,
+.item.active .img6 .frag,
+.item.active .img7 .frag {
 	transform: rotateY(0) translateZ(0) scale(1);
   -webkit-filter: saturate(1) blur(0) brightness(1) contrast(1);
   opacity: 1;
