@@ -176,6 +176,9 @@ $(document).ready(function(){
 		$('html').scrollTop(0);
 	});
 
+	//Script for SideBar onclick transition;
+
+
 	// Script for Bootstrap-tooltips
 	
 	
@@ -240,7 +243,7 @@ $(document).ready(function(){
 		document.getElementById('accordeon').innerHTML += '<li class="panel panel-default"><a href="#collapse-'+i+'" data-toggle="collapse" data-parent="#accordeon">'+dataCountry[i].name+'<span class="sr-only">'+dataCountry[i].name+' country</span></a><ul id="collapse-'+i+'" class="panel-collapse collapse list-unstyled"></ul></li>';
 		
 		for(var j=0; j<dataCountry[i].models.length; j++) {
-			document.getElementById('collapse-'+i).innerHTML += '<li><a href="#">'+dataCountry[i].models[j]+'</a></li>';
+			document.getElementById('collapse-'+i).innerHTML += '<li><a href="#'+dataCountry[i].models[j]+'">'+dataCountry[i].models[j]+'</a></li>';
 		}
 	}
 
