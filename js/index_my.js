@@ -1,5 +1,8 @@
 $( document ).ready( function(){
-  $.get("data/supercars.json", function( data ){
+  $.ajax({
+    "url" : "data/supercars.json", 
+    "dataType": "json",
+    "success" : function( data ){
     		var content = "";
     		for(var i=0; i<data.models.length; i++) {
     			content += "<tr id="+i+"><td>"+data.brand+"</td><td>"+data.models[i].model+"</td><td>"+data.models[i].productionYear+"</td><td>"+data.models[i].engine+"</td><td>"+data.models[i].horsepower+"</td></tr>";
@@ -8,7 +11,7 @@ $( document ).ready( function(){
       	console.log(data.brand);
       	console.log(content);
       }
-  );
+  });
   $("tr").on("click", function(e){
   	var id = this.id;
   	console.log(data.models[id], this);
