@@ -107,32 +107,7 @@
         <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main-body">
 
           <div class="main-content">
-						<div class="main-table">
-						  <table id="example" class="display compact cell-border table table-responsive table-bordered" cellspacing="0" width="100%">
-						    <caption><h3>List of famous SuperCars of all times</h3></caption>
-						    <thead>
-						      <tr>
-						        <th>Brand</th>
-						        <th>Model</th>
-						        <th class="hidden-xs">Year</th>
-						        <th class="visible-lg">Engine</th>
-						        <th class="visible-md visible-lg">Horse Power</th>
-						      </tr>
-						    </thead>
-						    <tfoot>
-						      <tr>
-						        <th>Brand</th>
-						        <th>Model</th>
-						        <th class="hidden-xs">Year</th>
-						        <th class="visible-lg">Engine</th>
-						        <th class="visible-md visible-lg">Horse Power</th>
-						      </tr>
-						    </tfoot>
-						    <tbody id="table">
-						      
-						    </tbody>
-						  </table>
-						</div>
+
           </div>
 
         </div>
@@ -161,7 +136,34 @@
       </div>
     </div>
   <!-- Templates -->
-
+  <script type="text/template" id="ListSuperCars">
+    <div class="main-table">
+      <table id="example" class="display compact cell-border table table-responsive table-bordered" cellspacing="0" width="100%">
+        <caption><h3>List of famous SuperCars of all times</h3></caption>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th class="hidden-xs">Year</th>
+            <th class="visible-md visible-lg">Horse Power</th>
+            <th class="visible-lg">Engine</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th class="hidden-xs">Year</th>
+            <th class="visible-md visible-lg">Horse Power</th>
+            <th class="visible-lg">Engine</th>
+          </tr>
+        </tfoot>
+        <tbody id="table">
+          
+        </tbody>
+      </table>
+    </div>
+  </script>
 	<!-- Scripts -->
 	<!-- <script src="js/jquery-1.11.1.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -171,7 +173,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
   <!-- <script src="js/jquery.dataTables.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.4/js/jquery.dataTables.min.js"></script>
-  <script src="js/index_my.js"></script>
+  <script src="js/main.js"></script>
   <!-- <script src="dest/build.min.js"></script> -->
 </body>
 </html>
