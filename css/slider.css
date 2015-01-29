@@ -137,11 +137,11 @@
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 1em;
+  bottom: 1.5em;
   left: 15%;
   z-index: 10;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   /* color: #fff; */
 	color: aqua;
 	letter-spacing: 2px;
@@ -157,7 +157,7 @@
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .carousel-indicators {
   position: absolute;
-  bottom: 5px;
+  bottom: 0.5em;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -168,7 +168,7 @@
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 2.5em;
+  width: 1.5em;
   height: .75em;
   margin: 1px;
   text-indent: -999px;
@@ -184,7 +184,7 @@
 	opacity: .9;
 }
 .carousel-indicators .active {
-  width: 2.5em;
+  width: 1.5em;
   height: .75em;
   /* margin: 0; */
   background-color: red;
@@ -334,13 +334,14 @@
     padding-bottom: 56.25%;
   }
 
-.img1 .frag { background-image: url(../images/slider/01-mc-laren-f1.jpg);}
-.img2 .frag { background-image: url(../images/slider/02-Bugatti-Veyron.jpg);}
-.img3 .frag { background-image: url(../images/slider/03-Ford-GT.jpg);}
-.img4 .frag { background-image: url(../images/slider/04-2013-red-ferrari-laferrari.jpg);}
-.img5 .frag { background-image: url(../images/slider/05-Maserati-MC12.jpg);}
-.img6 .frag { background-image: url(../images/slider/06-Porsche-918-Spyder.jpg);}
-.img7 .frag { background-image: url(../images/slider/07-pagani-zonda-r.jpg);}
+  .img1 .frag { background-image: url(../images/slider/01-mc-laren-f1.jpg);}
+  .img2 .frag { background-image: url(../images/slider/02-Bugatti-Veyron.jpg);}
+  .img3 .frag { background-image: url(../images/slider/03-Ford-GT.jpg);}
+  .img4 .frag { background-image: url(../images/slider/04-2013-red-ferrari-laferrari.jpg);}
+  .img5 .frag { background-image: url(../images/slider/05-Maserati-MC12.jpg);}
+  .img6 .frag { background-image: url(../images/slider/06-Porsche-918-Spyder.jpg);}
+  .img7 .frag { background-image: url(../images/slider/07-pagani-zonda-r.jpg);}
+
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -368,5 +369,11 @@
   }
   .carousel-indicators {
     bottom: 1em;
+  }
+  .carousel-indicators li {
+    width: 2.5em;
+  }
+  .carousel-indicators .active {
+    width: 2.5em;
   }
 }

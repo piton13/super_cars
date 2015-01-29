@@ -166,6 +166,13 @@ var data = [
 
 $(document).ready(function(){
 
+	$.ajax({
+		"url": "../data/startPage.txt",
+		"dataType": "text",
+		"success": function(data){
+			$(".main-content").html(data);
+		}
+	});
 	// Script for Back_to_top click
 	//for Chrome; 
 	$("#BackToTop").on('click', function(e){
@@ -185,14 +192,35 @@ $(document).ready(function(){
 
 	// Script for change content
 	// 
-	$("[href=#about]").on('click', function(e){
-		$('.main-content').html($('#SuperCarsHistory').html());
+	$("[href=#about]").on('click', function(){
+		$.ajax({
+			"url": "../data/about.txt",
+			"dataType": "text",
+			"success": function(data){
+				$(".main-content").html(data);
+			}
+		});
+		// $('.main-content').html($('#SuperCarsHistory').html());
 	});
-	$("[href=#home]").on('click', function(e){
-		$('.main-content').html($('#StartPage').html());
+	$("[href=#home]").on('click', function(){
+		$.ajax({
+			"url": "../data/startPage.txt",
+			"dataType": "text",
+			"success": function(data){
+				$(".main-content").html(data);
+			}
+		});
+		// $('.main-content').html($('#StartPage').html());
 	});
-	$("[href=#contacts]").on('click', function(e){
-		$('.main-content').html($('#MyContacts').html());
+	$("[href=#contacts]").on('click', function(){
+		$.ajax({
+			"url": "../data/myContacts.txt",
+			"dataType": "text",
+			"success": function(data){
+				$(".main-content").html(data);
+			}
+		});
+		// $('.main-content').html($('#MyContacts').html());
 	});
 	$("[href=#listcars]").on('click', function(e){
 		$('.main-content').html($('#ListSuperCars').html());
