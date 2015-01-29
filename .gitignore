@@ -1,5 +1,6 @@
 *.txt
 !data/*.txt
+!data/*.json
 dest/
 github/
 Gruntfile.js
