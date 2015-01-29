@@ -167,7 +167,7 @@ var data = [
 $(document).ready(function(){
 
 	$.ajax({
-		"url": "../data/startPage.txt",
+		"url": "data/startPage.txt",
 		"dataType": "text",
 		"success": function(data){
 			$(".main-content").html(data);
@@ -194,7 +194,7 @@ $(document).ready(function(){
 	// 
 	$("[href=#about]").on('click', function(){
 		$.ajax({
-			"url": "../data/about.txt",
+			"url": "data/about.txt",
 			"dataType": "text",
 			"success": function(data){
 				$(".main-content").html(data);
@@ -204,7 +204,7 @@ $(document).ready(function(){
 	});
 	$("[href=#home]").on('click', function(){
 		$.ajax({
-			"url": "../data/startPage.txt",
+			"url": "data/startPage.txt",
 			"dataType": "text",
 			"success": function(data){
 				$(".main-content").html(data);
@@ -214,7 +214,7 @@ $(document).ready(function(){
 	});
 	$("[href=#contacts]").on('click', function(){
 		$.ajax({
-			"url": "../data/myContacts.txt",
+			"url": "data/myContacts.txt",
 			"dataType": "text",
 			"success": function(data){
 				$(".main-content").html(data);
