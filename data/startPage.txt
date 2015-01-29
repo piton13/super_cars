@@ -1,0 +1,142 @@
+<!-- !!!!!!!!!!!!! Slider !!!!!!!!!! -->
+<div id="carousel" class="carousel slide">
+  <!-- Indicators of slides -->
+  <ol class="carousel-indicators">
+    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+    <li data-target="#carousel" data-slide-to="4"></li>
+    <li data-target="#carousel" data-slide-to="5"></li>
+    <li data-target="#carousel" data-slide-to="6"></li>
+  </ol>
+  <!-- Slider -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="img img1">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>McLaren F1</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit Germany - > Mercedes</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img2">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Bugatti Veyron</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit France - > Bugatti</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img3">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Ford GT</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit USA - > Ford</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img4">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>LaFerrari</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit Italia - > Ferrari</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img5">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Maserati MC12</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit Italia - > Maserati</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img6">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Porsche 918 Spyder</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit Germany - > Porsche</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img7">
+        <div class="frag frag1"></div>
+        <div class="frag frag2"></div>
+        <div class="frag frag3"></div>
+        <div class="frag frag4"></div>
+        <div class="frag frag5"></div>
+        <div class="frag frag6"></div>
+        <div class="frag frag7"></div>
+        <div class="frag frag8"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Pagani Zonda</h3>
+        <p>I'm so sorry... The site is in development stage. It doesn't work yet.</p>
+        <p>for more info visit Italia - > Pagani</p>
+      </div>
+    </div>
+  </div>
+  <!-- Arrows toggle slides -->
+  <a href="#carousel" class="left carousel-control" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a href="#carousel" class="right carousel-control" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
