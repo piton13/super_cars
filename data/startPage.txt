@@ -140,6 +140,3 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-<table id="table">
-
-</table>

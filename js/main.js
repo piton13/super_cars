@@ -264,7 +264,7 @@ $(document).ready(function(){
 			"success" : function( data ){
         var content="";
         for(var i=0; i<data.brands.length; i++) {
-          if (data.brands[i].brand === "BMW") {
+          if (data.brands[i].brand === "McLaren") {
             content += "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
             $(".main-content").html(content);
             for(var j=0; j<data.brands[i].models.length; j++) {
@@ -277,6 +277,7 @@ $(document).ready(function(){
           //   content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
           // }
         	}
+        	else console.log(data.brands[i].brand);
       	}
 	  	}
 		});
