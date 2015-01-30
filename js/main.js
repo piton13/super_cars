@@ -257,7 +257,8 @@ $(document).ready(function(){
 		$('#example').dataTable();
 	});
 
-	$("[href=#BMW]").on("click", function() {  
+// Script for reacting on click over sideBar;
+	$("[href=#BMW]").click(function(e) {
 		$.ajax({
 			"url" : "data/supercars.json",
 			"dataType" : "json",
@@ -266,20 +267,23 @@ $(document).ready(function(){
         for(var i=0; i<data.brands.length; i++) {
         	console.log("i= "+i+";");
           if (data.brands[i].brand === "BMW") {
-            content += "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
+            content = "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
             $(".main-content").html(content);
             for(var j=0; j<data.brands[i].models.length; j++) {
-            	console.log("j= "+j+";");
-            	content = "";
-              content += "<li role='presentation'><a href='#car"+j+"' aria-controls='car"+j+"' role='tab' data-toggle='tab'>"+data.brands[i].models[j].model+"</a></li>";
+            	if (j===0) {
+            		content = "<li role='presentation' class='active'><a href='#car"+j+"' aria-controls='car"+j+"' role='tab' data-toggle='tab'>"+data.brands[i].models[j].model.toUpperCase()+"</a></li>";
+            		$("#tab-toggler").append(content);
+            	} else { content = "<li role='presentation'><a href='#car"+j+"' aria-controls='car"+j+"' role='tab' data-toggle='tab'>"+data.brands[i].models[j].model.toUpperCase()+"</a></li>";
               $("#tab-toggler").append(content);
-              content = "";
-              content += "<div role='tabpanel' class='tab-pane active' id='car"+j+"'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem repellat tenetur ipsa ex hic nihil corporis fugiat officiis eaque.</div>";
-              $(".tab-content").append(content);
+              }
+              if (j===0) {
+              	content = "<div role='tabpanel' class='tab-pane active' id='car"+j+"'>This is car №"+(j+1)+"\n\n\tProduction Year: "+data.brands[i].models[j].productionYear+"\nEngine: "+data.brands[i].models[j].engine+"\nHorse Power: "+data.brands[i].models[j].horsepower+"</div>";
+              	$(".tab-content").append(content);
+              } else {
+              	content = "<div role='tabpanel' class='tab-pane' id='car"+j+"'>This is car №"+(j+1)+"\n\n\tProduction Year: "+data.brands[i].models[j].productionYear+"\nEngine: "+data.brands[i].models[j].engine+"\nHorse Power: "+data.brands[i].models[j].horsepower+"</div>";
+              	$(".tab-content").append(content);
+              }
           	}
-          // for(var j=0; j<data.brands[i].models.length; j++) {
-          //   content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
-          // }
         	}
       	}
 	  	}
