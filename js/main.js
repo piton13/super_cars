@@ -173,6 +173,17 @@ $(document).ready(function(){
 			$(".main-content").html(data);
 		}
 	});
+	$.get("data/supercars.json", function( data ){
+  		var content="";
+  		for(var i=0; i<data.brands.length; i++) {
+        for(var j=0; j<data.brands[i].models.length; j++) {
+          content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
+        }
+      $("#table").append(content);
+      content = "";
+  		}
+    }
+	);
 	// Script for Back_to_top click
 	//for Chrome; 
 	$("#BackToTop").on('click', function(e){
@@ -226,29 +237,18 @@ $(document).ready(function(){
 		$('.main-content').html($('#ListSuperCars').html());
 
 		// Script for dataTable;
-		$.get("data/supercars.json", function( data ){
-		  		var content="";
-		  		for(var i=0; i<data.brands.length; i++) {
-		        for(var j=0; j<data.brands[i].models.length; j++) {
-		          content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
-		        }
-		      $("#table").append(content);
-		      content = "";
-		  		}
-		    }
-		);
 		// 
-		// for(var l=0; l<data.length; l++){
-		// 	document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].productionYear+"</td><td class='visible-md visible-lg'>"+data[l].horsepower+"</td><td class='visible-lg'>"+data[l].engine+"</td></tr>";
-		// }
-		// $('tr').on('click', function(e){
-		// 	var id = this.id;
-		// 	alert("Brand: "+data[id].brand+"\nModel: "+data[id].model+"\nProduction Year: "+data[id].productionYear+"\nInfo: "+data[id].info+"\nEngine: "+data[id].engine+"\nHorse Power: "+data[id].horsepower);
-		// 	// alert(data[id]);
-		// });
-		// // Usage DataTable
-		// $('table').dataTable();
-		// $('#example').dataTable();
+		for(var l=0; l<data.length; l++){
+			document.getElementById('table').innerHTML += "<tr id='"+l+"'><td>"+data[l].brand+"</td><td>"+data[l].model+"</td><td class='hidden-xs'>"+data[l].productionYear+"</td><td class='visible-md visible-lg'>"+data[l].horsepower+"</td><td class='visible-lg'>"+data[l].engine+"</td></tr>";
+		}
+		$('tr').on('click', function(e){
+			var id = this.id;
+			alert("Brand: "+data[id].brand+"\nModel: "+data[id].model+"\nProduction Year: "+data[id].productionYear+"\nInfo: "+data[id].info+"\nEngine: "+data[id].engine+"\nHorse Power: "+data[id].horsepower);
+			// alert(data[id]);
+		});
+		// Usage DataTable
+		$('table').dataTable();
+		$('#example').dataTable();
 	});
 
 	// Script for Taby;
