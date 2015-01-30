@@ -139,4 +139,7 @@
   <a href="#carousel" class="right carousel-control" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
+  <table id="table">
+
+  </table>
 </div>
