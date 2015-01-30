@@ -258,14 +258,13 @@ $(document).ready(function(){
 	});
 
 // Script for reacting on click over sideBar;
-	$("[href=#BMW]").click(function(e) {
+	$("[href=#BMW]").on('click', function(e) {
 		$.ajax({
 			"url" : "data/supercars.json",
 			"dataType" : "json",
 			"success" : function( data ){
         var content;
         for(var i=0; i<data.brands.length; i++) {
-        	console.log("i= "+i+";");
           if (data.brands[i].brand === "BMW") {
             content = "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
             $(".main-content").html(content);
