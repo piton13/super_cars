@@ -1,10 +1,11 @@
 *.txt
 !data/*.txt
-!data/*.json
 dest/
 github/
 Gruntfile.js
-*.json
+data/supercars_first.json
+package.json
+package(forGrunt).json
 *.jpg
 !images/**/*.jpg
 image of super cars/
