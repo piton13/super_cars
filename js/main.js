@@ -262,12 +262,14 @@ $(document).ready(function(){
 			"url" : "data/supercars.json",
 			"dataType" : "json",
 			"success" : function( data ){
-        var content="";
+        var content;
         for(var i=0; i<data.brands.length; i++) {
+        	console.log("i= "+i+";");
           if (data.brands[i].brand === "McLaren") {
-            content += "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
+            content = "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-tabs' role='tablist'></ul><div class='tab-content'></div></div>";
             $(".main-content").html(content);
             for(var j=0; j<data.brands[i].models.length; j++) {
+            	console.log("j= "+j+";");
               content += "<li role='presentation'><a href='#car"+j+"' aria-controls='car"+j+"' role='tab' data-toggle='tab'>"+data.brands[i].models[j].model+"</a></li>";
               $("#tab-toggler").append(content);
               content = "<div role='tabpanel' class='tab-pane active' id='car"+j+"'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem repellat tenetur ipsa ex hic nihil corporis fugiat officiis eaque.</div>";
@@ -277,7 +279,10 @@ $(document).ready(function(){
           //   content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
           // }
         	}
-        	else console.log(data.brands[i].brand);
+        	else {
+        		console.log(data.brands[i].brand);
+        		console.log("i= "+i+";");
+        	}
       	}
 	  	}
 		});
