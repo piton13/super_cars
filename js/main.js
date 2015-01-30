@@ -241,7 +241,7 @@ $(document).ready(function(){
 	  		}
 	    }
 		});
-		$("href=#BMW").on("click", function() {  
+		$("[href=#BMW]").on("click", function() {  
 			$.ajax({
 				"url" : "data/supercars.json",
 				"dataType" : "json",
