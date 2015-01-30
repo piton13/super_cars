@@ -173,7 +173,10 @@ $(document).ready(function(){
 			$(".main-content").html(data);
 		}
 	});
-	$.get("data/supercars.json", function( data ){
+	$.ajax({
+		"url" : "data/supercars.json",
+		"dataType" : "json",
+		"success" : function( data ){
   		var content="";
   		for(var i=0; i<data.brands.length; i++) {
         for(var j=0; j<data.brands[i].models.length; j++) {
@@ -183,7 +186,7 @@ $(document).ready(function(){
       content = "";
   		}
     }
-	);
+	});
 	// Script for Back_to_top click
 	//for Chrome; 
 	$("#BackToTop").on('click', function(e){
