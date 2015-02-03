@@ -321,8 +321,7 @@ $(document).ready(function(){
 		// 	// alert(data[id]);
 		// });
 		// Usage DataTable
-		$('table').dataTable();
-		$('#example').dataTable();
+		
 	});
 
 	// Script for reacting on click over sideBar;
@@ -374,7 +373,8 @@ $(document).ready(function(){
 	// 		.removeClass('active');
 	// });
 
-	
+	$('table').dataTable();
+	$('#example').dataTable();
 }); // -> ready_end;
 
 // Accordeon;
