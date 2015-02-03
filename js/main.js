@@ -174,6 +174,17 @@ $(document).ready(function(){
 			$(".main-content").html(data);
 		}
 	});
+
+	dataCountry = _.sortBy(dataCountry, function (country) { return country.name;});
+	for(var i=0; i<dataCountry.length; i++) {
+		dataCountry[i].models.sort();
+		// dataCountry[i].models = _.sortBy(dataCountry[i].models);
+		document.getElementById('accordeon').innerHTML += '<li class="panel panel-default"><a href="#collapse-'+i+'" data-toggle="collapse" data-parent="#accordeon">'+dataCountry[i].name+'<span class="sr-only">'+dataCountry[i].name+' country</span></a><ul id="collapse-'+i+'" class="panel-collapse collapse list-unstyled"></ul></li>';
+		
+		for(var j=0; j<dataCountry[i].models.length; j++) {
+			document.getElementById('collapse-'+i).innerHTML += '<li><a id="'+dataCountry[i].models[j].toLowerCase()+'">'+dataCountry[i].models[j]+'</a></li>';
+		}
+	}
 	$.ajax({
 		"url" : "data/supercars.json",
 		"dataType" : "json",
@@ -203,6 +214,17 @@ $(document).ready(function(){
     	}
   	}
 	});
+	// Script for creating SideBar Navigation;
+	// 
+	// Sort by Country;
+	// _.sortBy(dataCountry, function (country) { return country.name;});
+	// 
+	// Sort by Models;
+	// _.sortBy(dataCountry[i].models);
+	// 
+	
+
+
 	// Script for Back_to_top click
 	//for Chrome; 
 	$("#BackToTop").on('click', function(e){
@@ -352,24 +374,7 @@ $(document).ready(function(){
 	// 		.removeClass('active');
 	// });
 
-	// Script for creating SideBar Navigation;
-	// 
-	// Sort by Country;
-	// _.sortBy(dataCountry, function (country) { return country.name;});
-	// 
-	// Sort by Models;
-	// _.sortBy(dataCountry[i].models);
-	// 
-	dataCountry = _.sortBy(dataCountry, function (country) { return country.name;});
-	for(var i=0; i<dataCountry.length; i++) {
-		dataCountry[i].models.sort();
-		// dataCountry[i].models = _.sortBy(dataCountry[i].models);
-		document.getElementById('accordeon').innerHTML += '<li class="panel panel-default"><a href="#collapse-'+i+'" data-toggle="collapse" data-parent="#accordeon">'+dataCountry[i].name+'<span class="sr-only">'+dataCountry[i].name+' country</span></a><ul id="collapse-'+i+'" class="panel-collapse collapse list-unstyled"></ul></li>';
-		
-		for(var j=0; j<dataCountry[i].models.length; j++) {
-			document.getElementById('collapse-'+i).innerHTML += '<li><a id="'+dataCountry[i].models[j].toLowerCase()+'">'+dataCountry[i].models[j]+'</a></li>';
-		}
-	}
+	
 }); // -> ready_end;
 
 // Accordeon;
