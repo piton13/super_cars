@@ -1,0 +1,42 @@
+.tabs-item {
+	list-style: none inside none;
+	display: none;
+}
+.tabs-item.active {
+	display: block;
+}
+
+.my_tab_info {
+	border-radius: 0 0 4px 4px;
+	padding: 20px;
+	/* margin-right: 1px; */
+	background: url(http://subtlepatterns.com/patterns/scribble_light.png) repeat;
+}
+
+.nav-tabs > li > a {
+	/*border-color: transparent;*/
+	background: #A3A3A3;
+	color: black;
+	border: 1px solid #222;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+	border-color: #777 #222 #222;
+	background: linear-gradient(to top, #222, #555, #777);
+	color: yellow;
+}
+ .nav-tabs > li.active > a:hover {
+	/*background: transparent;*/
+	color: black;
+} 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: black;
+  cursor: default;
+  /*background-color: red;*/
+  background: url(http://subtlepatterns.com/patterns/scribble_light.png) repeat;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  /* box-sizing: border-box; */
+}
