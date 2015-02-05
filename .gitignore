@@ -1,11 +1,14 @@
 *.txt
-*.js
-!js/*.js
-*.json
+!data/*.txt
+dest/
+github/
+Gruntfile.js
+data/supercars_first.json
+package.json
+package(forGrunt).json
 *.jpg
 !images/**/*.jpg
-node_modules/
-github/
-dest/
 image of super cars/
 images/compressed_slider/
+node_modules/
+package(forGrunt).json
