@@ -934,28 +934,13 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img {
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 .img-rounded {
   border-radius: 6px;
-}
-.img-thumbnail {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  padding: 4px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: all .2s ease-in-out;
-       -o-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
 }
 .img-circle {
   border-radius: 50%;
@@ -3748,21 +3733,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: #fff;
   }
 }
-.nav-pills > li {
-  float: left;
-}
-.nav-pills > li > a {
-  border-radius: 4px;
-}
-.nav-pills > li + li {
-  margin-left: 2px;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #337ab7;
-}
 .nav-stacked > li {
   float: none;
 }
@@ -4504,8 +4474,7 @@ a.badge:focus {
   text-decoration: none;
   cursor: pointer;
 }
-.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
+.list-group-item.active > .badge {
   color: #337ab7;
   background-color: #fff;
 }
@@ -4514,9 +4483,6 @@ a.badge:focus {
 }
 .list-group-item > .badge + .badge {
   margin-right: 5px;
-}
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
 }
 .jumbotron {
   padding: 30px 15px;
@@ -4556,32 +4522,6 @@ a.badge:focus {
   .jumbotron .h1 {
     font-size: 63px;
   }
-}
-.thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
-}
-.thumbnail > img,
-.thumbnail a > img {
-  margin-right: auto;
-  margin-left: auto;
-}
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #337ab7;
-}
-.thumbnail .caption {
-  padding: 9px;
-  color: #333;
 }
 .alert {
   padding: 15px;

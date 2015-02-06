@@ -8,9 +8,6 @@ html {
 	for Chrome 10.0+; IE 8.0+; Firefox 29.0+; Safari 5.1+; Opera 9.5+;
 	        box-sizing: border-box;  */
 }
-/* *, *:before, *:after {
-  box-sizing: inherit;
-} */
 body {
 	background: url(http://subtlepatterns.com/patterns/dark_wood.png) repeat;
 	padding-top: 55px;
@@ -21,6 +18,9 @@ body {
 	   -moz-box-sizing: border-box;
 	/* 	for Chrome 10.0+; IE 8.0+; Firefox 29.0+; Safari 5.1+; Opera 9.5+; */
 	        box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: Verdana, sans-serif;

@@ -7,6 +7,7 @@ data/supercars_first.json
 package.json
 package(forGrunt).json
 *.jpg
+!data/**/*.jpg
 !images/**/*.jpg
 image of super cars/
 images/compressed_slider/
