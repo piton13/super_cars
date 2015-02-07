@@ -80,7 +80,7 @@
 					]
 				}
 				, {
-					"brand": "Aston Martin",
+					"brand": "Aston-Martin",
 					"models": [
 					{"model": "DB5", "productionYear": "1963", "engine": "4.0-liter six underhood", "horsepower": "___"}
 					, {"model": "One-77", "productionYear": "2010", "engine": "___", "horsepower": "750-hp"}
@@ -108,7 +108,7 @@
 					]
 				}
 				, {
-					"brand": "Dodge Viper",
+					"brand": "Dodge-Viper",
 					"models": [
 					{"model": "SRT(/10)", "productionYear": "1992", "engine": "8.4-liter V10", "horsepower": "640-hp"}
 					]
@@ -177,14 +177,14 @@
 		, {"country" : "Italia",
 			"brands" : [
 				{
-					"brand": "De Tomaso",
+					"brand": "De-Tomaso",
 					"models": [
 					{"model": "Mangusta", "productionYear": "1967", "engine": "___", "horsepower": "___"}
 					, {"model": "Pantera", "productionYear": "1971", "engine": "Ford 5.8-liter Cleveland V8", "horsepower": "330-hp"}
 					]
 				}
 				, {
-					"brand": "Alfa Romeo",
+					"brand": "Alfa-Romeo",
 					"models": [
 					{"model": "8C", "productionYear": "1931", "engine": "straight-8-powered", "horsepower": "___"}
 					, {"model": "Tipo 33 Stradale", "productionYear": "1967", "engine": "2.0-liter V8", "horsepower": "___"}

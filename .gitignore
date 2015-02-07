@@ -1,15 +1,20 @@
+*.jpg
 *.txt
+_comments.json
+!data/**/*.jpg
+data/supercars_first.json
 !data/*.txt
 dest/
 github/
 Gruntfile.js
-data/supercars_first.json
-package.json
-package(forGrunt).json
-*.jpg
-!data/**/*.jpg
 !images/**/*.jpg
 image of super cars/
 images/compressed_slider/
 node_modules/
+package.json
+package(forGitHub).json
 package(forGrunt).json
+public/
+server.js
+server.py
+server.rb
