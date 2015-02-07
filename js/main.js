@@ -16,8 +16,8 @@ $(document).ready(function(){
 
 	// Script for loading startPage;
 	$.ajax({
-		"url": "data/startPage.txt",
-		"dataType": "text",
+		"url": "data/startPage.html",
+		"dataType": "html",
 		"method" : "GET",
 		"success": function(data){
 			$(".main-content").html(data);
@@ -100,9 +100,9 @@ $(document).ready(function(){
 	// 
 	$("[href=#about]").on('click', function(){
 		$.ajax({
-			"url": "data/about.txt",
+			"url": "data/about.html",
 			"method" : "GET",
-			"dataType": "text",
+			"dataType": "html",
 			"success": function(data){
 				$(".main-content").html(data);
 			}
@@ -110,9 +110,9 @@ $(document).ready(function(){
 	});
 	$("[href=#home]").on('click', function(){
 		$.ajax({
-			"url": "data/startPage.txt",
+			"url": "data/startPage.html",
 			"method" : "GET",
-			"dataType": "text",
+			"dataType": "html",
 			"success": function(data){
 				$(".main-content").html(data);
 			}
@@ -120,36 +120,45 @@ $(document).ready(function(){
 	});
 	$("[href=#contacts]").on('click', function(){
 		$.ajax({
-			"url": "data/myContacts.txt",
+			"url": "data/myContacts.html",
 			"method" : "GET",
-			"dataType": "text",
+			"dataType": "html",
 			"success": function(data){
 				$(".main-content").html(data);
 			}
 		});
 	});
 	$("[href=#listcars]").on('click', function(){
-		$('.main-content').html($('#ListSuperCars').html());
-		var content;
-		for (var k=0; k<reuseData.length; k++) {
-			for(var i=0; i<reuseData[k].brands.length; i++) {
-        for(var j=0; j<reuseData[k].brands[i].models.length; j++) {
-        	// content = "";
-        	// $("#table").append(content);
-        	// console.log(content);
-          // content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
-					content = "<tr id='table-id-"+i+""+j+"'><td class=visible-lg>"+reuseData[k].country+"</td><td>"+reuseData[k].brands[i].brand+"</td><td>"+reuseData[k].brands[i].models[j].model+"</td><td class=hidden-xs>"+reuseData[k].brands[i].models[j].productionYear+"</td><td class=visible-lg>"+reuseData[k].brands[i].models[j].engine+"</td><td class='visible-md visible-lg'>"+reuseData[k].brands[i].models[j].horsepower+"</td></tr>";
-          $("#table").append(content);
-          // $("#table-id-"+i+""+j).append(content);
-          // console.log(content);
-        }
-  		}
-  	}
-  	$('table').dataTable();
-  	$('#example').dataTable();
+		$.ajax({
+			"url": "data/listOfSuperCars.html",
+			"method" : "GET",
+			"dataType": "html",
+			"success": function(data){
+				$(".main-content").html(data);
+				var content;
+				for (var k=0; k<reuseData.length; k++) {
+					for(var i=0; i<reuseData[k].brands.length; i++) {
+		        for(var j=0; j<reuseData[k].brands[i].models.length; j++) {
+		        	// content = "";
+		        	// $("#table").append(content);
+		        	// console.log(content);
+		          // content += "<tr><td class=visible-lg>"+data.country+"</td><td>"+data.brands[i].brand+"</td><td>"+data.brands[i].models[j].model+"</td><td class=hidden-xs>"+data.brands[i].models[j].productionYear+"</td><td class=visible-lg>"+data.brands[i].models[j].engine+"</td><td class=\u0022visible-md visible-lg\u0022>"+data.brands[i].models[j].horsepower+"</td></tr>";
+							content = "<tr id='table-id-"+i+""+j+"'><td class=visible-lg>"+reuseData[k].country+"</td><td>"+reuseData[k].brands[i].brand+"</td><td>"+reuseData[k].brands[i].models[j].model+"</td><td class=hidden-xs>"+reuseData[k].brands[i].models[j].productionYear+"</td><td class=visible-lg>"+reuseData[k].brands[i].models[j].engine+"</td><td class='visible-md visible-lg'>"+reuseData[k].brands[i].models[j].horsepower+"</td></tr>";
+		          $("#table").append(content);
+		          // $("#table-id-"+i+""+j).append(content);
+		          // console.log(content);
+		        }
+		  		}
+		  	}
+		  	$('table').dataTable();
+		  	$('#example').dataTable();
+			}
+		});
+		// $('.main-content').html($('#ListSuperCars').html());
 	});
 	
 	// Script for reacting on click over sideBar;
+	// Used templates;
 	$("#accordeon li").on('click', function(e) {
 		var id = this.id;
 		console.log(id);
@@ -157,8 +166,9 @@ $(document).ready(function(){
   	for(var k=0; k<reuseData.length; k++) {
 	  	for(var i=0; i<reuseData[k].brands.length; i++) {
 	      if (reuseData[k].brands[i].brand.toLowerCase() === id) {
-	        content = "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-pills' role='tablist'></ul><div class='tab-content'></div></div>";
-	        $(".main-content").html(content);
+	        // content = "<div role='tabpanel'><ul id='tab-toggler' class='nav nav-pills' role='tablist'></ul><div class='tab-content'></div></div>";
+	        $('.main-content').html($('#TabListfromSideBar').html());
+	        // $(".main-content").html(content);
 	        for(var j=0; j<reuseData[k].brands[i].models.length; j++) {
 	        	if (j===0) {
 	        		content = "<li role='presentation' class='active'><a href='#car"+j+"' aria-controls='car"+j+"' role='tab' data-toggle='tab'>"+reuseData[k].brands[i].models[j].model.toUpperCase()+"</a></li>";
@@ -170,12 +180,12 @@ $(document).ready(function(){
 	          	content = "";
 	          	content += "<div role='tabpanel' class='tab-pane active' id='car"+j+"'><p>This is car №"+(j+1)+"\n\n\tProduction Year: "+reuseData[k].brands[i].models[j].productionYear+"\nEngine: "+reuseData[k].brands[i].models[j].engine+"\nHorse Power: "+reuseData[k].brands[i].models[j].horsepower+"</p><div id='containerThumbnail' class='row'>";
 	          	for(var p=0; p<6; p++){
-	          		content += "<div class='col-sm-6 col-lg-4'><a href='#' class='thumbnail'><img src='data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg' alt='this is Ferrari'></a></div>";
+	          		content += "<div id='containerThumbnail_inner' class='col-sm-6 col-lg-4'><a href='#' class='thumbnail'><img src='data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg' alt='this is Ferrari'></a></div>";
 	          	}
 	          	content += "</div><p class='share'><a>Visit our official site"+j+"</a><i class='fa fa-facebook-square fa-2x facebook'></i><i class='fa fa-google-plus-square fa-2x google-plus'></i><i class='fa fa-twitter-square fa-2x twitter'></i></p></div>";
 	          	$(".tab-content").append(content);
-	          	var doroga = "data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg";
-	          	console.log(doroga);
+	          	// var doroga = "data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg";
+	          	// console.log(doroga);
 	          } else {
 	          	content = "";
 	          	content += "<div role='tabpanel' class='tab-pane' id='car"+j+"'><p>This is car №"+(j+1)+"\n\n\tProduction Year: "+reuseData[k].brands[i].models[j].productionYear+"\nEngine: "+reuseData[k].brands[i].models[j].engine+"\nHorse Power: "+reuseData[k].brands[i].models[j].horsepower+"</p><div id='containerThumbnail' class='row'>";
@@ -184,8 +194,8 @@ $(document).ready(function(){
 	          	}
 	          	content += "</div><p class='share'><a>Visit our official site"+j+"</a><i class='fa fa-facebook-square fa-2x facebook'></i><i class='fa fa-google-plus-square fa-2x google-plus'></i><i class='fa fa-twitter-square fa-2x twitter'></i></p></div>";
 	          	$(".tab-content").append(content);
-	          	var doroga = "data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg";
-	          	console.log(doroga);
+	          	// var doroga = "data/img/"+reuseData[k].brands[i].brand.toLowerCase()+"/"+reuseData[k].brands[i].models[j].model.toLowerCase()+"/0"+(p+1)+".jpg";
+	          	// console.log(doroga);
 	          }
 	      	}
 	    	}

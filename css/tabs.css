@@ -69,14 +69,40 @@ div[role=tabpanel] {
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
+
+/* #containerThumbnail_inner {
+  position: relative;
+  height: 100%;
+  padding-bottom: 25%;
+} */
+/*.share::before,
+.share::after {
+  content: "";
+  display: none;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}*/
+/* .thumbnail:hover {
+  left: -5%;
+  right: -5%;
+  top: -5%;
+  bottom: -5%;
+  z-index: 10;
+} */
 .thumbnail {
 	/*width:90%;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bott/om: 0;*/
+  /*left: 0;*/
+  /*ri/ght: 0;*/
 	/*height:200px;*/
 	margin: 0 auto;
   display: block;
   padding: 8px; 
   margin-bottom: 20px; 
-   line-height: 1.42857143; 
+  line-height: 1.42857143; 
   background-color: #fff; 
   border: 2px solid #777; 
   border-radius: 4px; 
